@@ -1,2 +1,58 @@
-/* For information on how to create your own theme, please refer to:
-http://ionicframework.com/docs/theming/ */
+/* 🌙 Tema escuro moderno */
+:root {
+  --ion-color-primary: #7c3aed;
+  --ion-color-primary-rgb: 124,58,237;
+  --ion-color-primary-contrast: #ffffff;
+
+  --ion-background-color: #0f0f1a;
+  --ion-text-color: #ffffff;
+
+  --ion-item-background: #1a1a2e;
+}
+
+/* Fundo geral */
+ion-content {
+  --background: linear-gradient(180deg, #0f0f1a, #1a1a2e);
+}
+
+/* Títulos */
+h1, h2 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Inputs */
+ion-input {
+  margin-bottom: 12px;
+  border-radius: 12px;
+  --padding-start: 12px;
+  --background: #1f1f35;
+  color: white;
+}
+
+/* Botões */
+ion-button {
+  margin-top: 10px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+/* Cards */
+ion-card {
+  border-radius: 16px;
+  background: #1a1a2e;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+/* Lista */
+ion-item {
+  --background: #1a1a2e;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+/* Hover (PC) */
+ion-item:hover {
+  transform: scale(1.02);
+  transition: 0.2s;
+}
