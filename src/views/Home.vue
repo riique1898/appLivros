@@ -1,6 +1,10 @@
 <template>
   <ion-page>
     <ion-content class="ion-padding">
+         <!-- BOTÃO -->
+      <ion-button expand="full" @click="voltar">
+        Voltar para login
+      </ion-button>
       <h2>Livros</h2>
 
       <ion-list>
@@ -24,5 +28,8 @@ const router = useRouter()
 
 const ver = (id: number) => {
   router.push(`/detalhe/${id}`)
+}
+const voltar = () => {
+  router.push('/login')
 }
 </script>
